@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="">
+    <div class="">
+        <section class="bg-purple-700 replace hidden md:hidden rounded-bl-[50px] p-4 h-[500px]">
+            <div class="flex justify-between items-center">
+                <h1 class="text-white font-bold text-3xl">Blogr</h1>
+                <i class="fa-solid fa-x text-3xl xx" style="color: #fcfcfd;"></i>
+            </div>
+            <div class="bg-white rounded-3xl m-4 flex flex-col justify-center items-center py-6 gap-6">
+                <p class="font-bold">Product</p>
+                <p class="font-bold">Company</p>
+                <p class="font-bold">Connect</p>
+                <div class="w-[90%] h-[2px] bg-gray-300 my-4 mx-auto"></div>
+
+                <button class="border w-[25%] border-purple-700  hover:bg-purple-700 hover:text-white p-2 rounded-3xl ">Login</button>
+                <button class="border border-purple-700 w-[25%]  hover:bg-purple-700 hover:text-white p-2 rounded-3xl ">Sign up</button>
+            </div>
+            
+        </section>
+        <nav class="text-center rounded-bl-[80px] md:h-[350px] md:w-[100%] flex flex-col justify-evenly gap-16 p-4 h-[600px] text-white [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] md:flex" >
+            <div class="flex justify-between items-center">
+                <h1 class="font-bold text-3xl">Blogr</h1>
+                <div class="mini justify-around items-center gap-20 w-full hidden md:flex">
+                    <div class="dropdown w-[70%]">
+                        <div class="relative inline-block text-left">
+                            <div class="mx-5">
+                              <button type="button" class="inline-flex down justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                Product
+                                <svg class="-mr-1 h-5 w-5 text-gray-400 " viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                              </button>
+                            </div>
+                          
+                            <!--
+                              Dropdown menu, show/hide based on menu state.
+                          
+                              Entering: "transition ease-out duration-100"
+                                From: "transform opacity-0 scale-95"
+                                To: "transform opacity-100 scale-100"
+                              Leaving: "transition ease-in duration-75"
+                                From: "transform opacity-100 scale-100"
+                                To: "transform opacity-0 scale-95"
+                            -->
+                            <div class="absolute right-0 z-10 mt-2 w-30 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                              <div class="py-1 list-down hidden" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">Overview</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1">Pricing</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">Market4</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">Features</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">integrations</a>
+                                <form method="POST" action="#" role="none">
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="relative inline-block text-left">
+                            <div>
+                              <button type="button" class="inline-flex w-full down2 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                Company
+                                <svg class="-mr-1 h-5 w-5  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                              </button>
+                            </div>
+                          
+                            <!--
+                              Dropdown menu, show/hide based on menu state.
+                          
+                              Entering: "transition ease-out duration-100"
+                                From: "transform opacity-0 scale-95"
+                                To: "transform opacity-100 scale-100"
+                              Leaving: "transition ease-in duration-75"
+                                From: "transform opacity-100 scale-100"
+                                To: "transform opacity-0 scale-95"
+                            -->
+                            <div class="absolute right-0 z-10 mt-2 w-30 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                              <div class="py-1 list-down2 hidden" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">About</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1">Team</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">Blog</a>
+                                <form method="POST" action="#" role="none">
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="relative inline-block text-left">
+                            <div>
+                              <button type="button" class="inline-flex w-full down3 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                Connect
+                                <svg class="-mr-1 h-5 w-5  text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                              </button>
+                            </div>
+                          
+                            <!--
+                              Dropdown menu, show/hide based on menu state.
+                          
+                              Entering: "transition ease-out duration-100"
+                                From: "transform opacity-0 scale-95"
+                                To: "transform opacity-100 scale-100"
+                              Leaving: "transition ease-in duration-75"
+                                From: "transform opacity-100 scale-100"
+                                To: "transform opacity-0 scale-95"
+                            -->
+                            <div class="absolute right-0 z-10 mt-2 w-30 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                              <div class="py-1 list-down3 hidden" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">Contact</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1">Newslitter</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">Linkedin</a>
+                                <form method="POST" action="#" role="none">
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                          
+                    </div>
+                    <div class="flex w-[50%] justify-end">
+                        <button class="border w-[25%] border-white  hover:bg-white hover:text-purple-700 p-2 rounded-3xl me-2">Login in</button>
+                        <button class="border border-white w-[25%]  hover:bg-white hover:text-purple-700 p-2 rounded-3xl me-2">Sign up</button>
+                    </div>
+
+                </div>
+                <div><i class="fa-solid fa-bars font-bold text-3xl bars md:hidden"></i></div>
+            </div>
+            <div>
+                
+                <h class="font-bold text-3xl">A modern publishing platform</h>
+                <p class="px-6 mt-7">Grow your audience and build your online brand</p>
+            </div>
+            <div>
+                <button class="border w-[40%] border-white md:w-[15%] hover:bg-white hover:text-purple-700 p-2 rounded-3xl me-2">Start for free</button>
+                <button class="border border-white w-[40%] md:w-[15%] hover:bg-white hover:text-purple-700 p-2 rounded-3xl me-2">Learn More</button>
+            </div>
+        </nav>
+        <div class="future flex flex-col justify-center  items-center gap-10 ">
+            <h1 class="text-2xl font-semibold mt-12 text-slate-700">
+                Designed for the future
+            </h1>
+            <div class="collect md:flex md:flex-row-reverse md:justify-between">
+                <div class="first md:w-1/2 md:flex md:justify-center">
+                    <img src="./images/illustration-editor-mobile.svg" alt="">
+                </div>
+                <div class="second md:w-1/2 ">
+
+
+                    <div class="intro flex flex-col justify-center items-center gap-10 p-12 text-center md:h-[200px]">
+                        <h1 class="text-2xl font-semibold mt-12 md:text-start text-slate-700">
+                            Introducing an extensible editor</h1>
+                        <p class="text-gray-700 md:text-start">features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+                    </div>
+                    <div class="intro flex flex-col justify-center md:text-start items-center gap-10 p-12 text-center md:h-[200px]">
+                        <h1 class="text-2xl font-semibold md:text-start md:mt-20 mt-16 text-slate-700">
+                            Robust content management </h1>
+                        <p class="text-gray-700">
+                            Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full contro        
+                        </div>
+                </div>
+
+
+            </div>
+        </div>
+        
+            <section class="infrastructure h-[500px] md:h-[300px]  mt-44 rounded-bl-[70px] rounded-tr-[70px] intro flex bg-slate-700 text-white flex-col justify-end items-center p-12 text-center md:justify-center md:flex-row-reverse  ">
+                <div class=" md:top-[-60px]  md:left-6 md:w-1/3">
+
+                    <img class="w-full" src="./images/illustration-phones.svg" alt="">
+                </div>
+                <div class="md:w-1/2 ">
+
+                    <h1 class="text-2xl font-semibold  mb-6">
+    
+                    State of the Art Infrastructure</h1>
+                <p class="">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+                </div>
+        </section>
+       
+        <section class="intro flex flex-col justify-center items-center gap-10 p-12 text-center md:flex-row">
+            <div class="md:w-1/2">
+                <div class="my-16">
+                    <img src="./images/illustration-laptop-mobile.svg" alt="">
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <div class="md:text-start">
+                    <h1 class="text-2xl font-semibold text-slate-700 md:mb-7">
+                        Free, open, simple</h1>
+                    <p class="text-gray-700">
+                        Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+                    
+                </div>
+                
+
+                    <section class="intro flex flex-col justify-center items-center gap-10 mt-8 text-center md:items-start">
+
+                        <h1 class="text-2xl font-semibold text-slate-700">
+                            Powerful tooling            </h1>
+                        <p class="text-gray-700 md:text-start">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+                    </section>
+                
+
+            </div>
+         
+        </section>
+      
+        <footer class="flex flex-col justify-center items-center text-center text-white w-full bg-slate-700 pt-5 md:flex-row md:justify-around md:items-center">
+            <h1 class="font-bold text-2xl">Blogr</h1>
+            <div class="my-7 flex flex-col" >
+                <p class="font-bold mb-3">product</p>
+                <a href="#">Overview</a>
+                <a href="#">Pricing</a>
+                <a href="#">Marketplace</a>
+                <a href="#">Features</a>
+                <a href="#">integtations</a>
+            </div>
+            <div class="my-7 flex flex-col">
+                <p class="font-bold mb-3">Company</p>
+                <a href="#">About</a>
+                <a href="#">Team</a>
+                <a href="#">Blog</a>
+             
+            </div>
+            <div class="my-7 flex flex-col">
+                <p class="font-bold mb-3">Connect</p>
+                <a href="#">Contact</a>
+                <a href="#">Newslitter</a>
+                <a href="#">Linkedin</a>
+                
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js.js"></script>
+</body>
+</html>
